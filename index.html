@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
 </head>
+<style>
+    body {
+    background-color: #ab7bb5;
+    }
+
+    .profile-image {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+    }
+</style>
 <body>
     <h1>About Me</h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXVimL41j-AyLW5iz0clibXj2W4abt4Fcj3wZrQhpMXzVi-XceS4G-LJodmC0aOu8hE04&usqp=CAU" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXVimL41j-AyLW5iz0clibXj2W4abt4Fcj3wZrQhpMXzVi-XceS4G-LJodmC0aOu8hE04&usqp=CAU" alt="" class="profile-image"/>
     <br/>
     <h2>Hi, my name is Nono<br/></h2>
     <h3>I am :<br/></h3>
@@ -20,6 +31,23 @@
         But <i>loves</i> cats<br/>
         Wants to know if you also love cats
     </h4>
+    <div id="container">
+        So... do you love cats?
+    </div>
+    <button onclick="yes()">Yes I do!</button>
+        <script>
+        function yes() {
+          var element = document.querySelector("#container");
+          element.innerHTML = "So do I!";
+        }
+        </script>
+    <button onclick="no()">No I don't.</button>
+        <script>
+        function no() {
+         var element = document.querySelector("#container");
+         element.innerHTML = "But why not?";
+       }
+       </script><br/>
     <a href="https://nonokeu.github.io/aboutme/happy.html">Some Happy Cats</a><br/>
     <a href="https://nonokeu.github.io/aboutme/meme.html">Some Meme Cats</a>
 </body>
